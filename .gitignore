@@ -1,0 +1,10 @@
+# Logs
+logs
+*.log
+
+node_modules
+src/js/vendor
+dev
+dist
+.DS_Store
+.tmp

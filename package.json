@@ -1,0 +1,31 @@
+{
+  "name": "kickstart-webpack",
+  "version": "0.0.1",
+  "description": "Kickstart template using webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist/",
+    "build": "npm run clean && webpack",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmarzy/kickstart-webpack.git"
+  },
+  "author": "Lee Marsden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmarzy/kickstart-webpack/issues"
+  },
+  "homepage": "https://github.com/lmarzy/kickstart-webpack#readme",
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "html-webpack-plugin": "^1.7.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-merge": "^0.6.0"
+  }
+}
