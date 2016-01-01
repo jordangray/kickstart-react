@@ -8,13 +8,18 @@ const PATHS = {
   dest: path.join(__dirname, 'dist')
 }
 const common = {
-  entry: PATHS.src + '/main.js',
+  entry: PATHS.src + '/main',
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
-    loaders: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel'
-    }]
+    loaders: [
+      {
+        test: /\.jsx$/,
+        include: PATHS.src,
+        loader: 'babel'
+      }
+    ]
   }
 }
 
